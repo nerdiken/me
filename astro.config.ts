@@ -4,14 +4,8 @@ import UnoCSS from 'unocss/astro';
 
 export default defineConfig({
   output: "static",
-  base: '/me/',
   // used to generate images
-  site:
-    process.env.VERCEL_ENV === 'production'
-      ? 'https://brutal.elian.codes/'
-      : process.env.VERCEL_URL
-      ? `https://${process.env.VERCEL_URL}/`
-      : 'https://localhost:3000/',
+  site: 'https://nerdiken.me/',
   trailingSlash: 'ignore',
   integrations: [sitemap(), UnoCSS({ injectReset: true })],
   vite: {
