@@ -1,0 +1,52 @@
+# -----------------------------
+# Node / npm / build
+# -----------------------------
+node_modules/
+dist/
+.build/
+.astro/
+
+# Log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+pnpm-error.log*
+
+# Local env files
+.env
+.env.*.local
+
+# Output from `astro build`
+output/
+
+# -----------------------------
+# Editor / OS
+# -----------------------------
+.DS_Store
+Thumbs.db
+
+# VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# JetBrains (WebStorm, PhpStorm, etc.)
+.idea/
+
+# Mac/Linux/Windows swap/backup files
+*.swp
+*.swo
+*~
+*.bak
+*.tmp
+
+# -----------------------------
+# Astro cache (optional)
+# -----------------------------
+.cache/
+
+# -----------------------------
+# Deployment
+# -----------------------------
+gh-pages/
